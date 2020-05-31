@@ -11,8 +11,8 @@
     android:id="@+id/fishjumpFONT"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:src="@drawable/fish_jumpFONT"
-
+    android:src="@drawable/fishjumpfont"
+/>
 
 <ImageView
     android:layout_below="@+id/fishjumpFONT"
@@ -29,15 +29,17 @@
         android:id="@+id/playButton"
         android:layout_width="230dp"
         android:layout_height="60dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="570dp"
         android:layout_marginLeft="100dp"
         android:text="@string/play"
         android:textColor="#FFFFFF"
-        android:shadowColor="A8A8A8"
+        android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
         android:background="@drawable/dizajni_buttonit"
+        android:textStyle="bold"
+        android:textSize="20dp"
 
 
         />
