@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Fish Jump</string>
     <string name="fish_jump">Fish Jump</string>
+    <string name="play">PLAY</string>
 </resources>

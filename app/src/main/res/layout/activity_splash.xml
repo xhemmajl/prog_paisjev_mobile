@@ -7,15 +7,30 @@
     android:background="@drawable/splash"
     tools:context=".SplashActivity">
 
-
+<ImageView
+    android:id="@+id/fishjumpFONT"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/fish_jumpFONT"
 
 
 <ImageView
+    android:layout_below="@+id/fishjumpFONT"
     android:layout_marginTop="-200dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:id="@+id/imageView"
     android:layout_centerHorizontal="true"
     android:src="@drawable/splash_icon"/>
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="150dp"
+        android:text="@string/play"
+
+        />
 </RelativeLayout>
