@@ -24,6 +24,8 @@ public class GameView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        //pe vendosum npamje ku ka mu dok niher
+        canvas.drawBitmap(fish,0,0,null);
     }
 }
 
