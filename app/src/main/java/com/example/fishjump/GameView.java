@@ -38,8 +38,10 @@ public class GameView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        //pe vendosum npamje ku ka mu dok niher
+        //pe vendosum npamje ku kan mu dok permes drawit
+        canvas.drawBitmap(backgroundImage,0,0,null);
         canvas.drawBitmap(fish,0,0,null);
+        canvas.drawText("Score :",20,60,scorePaint);
     }
 }
 
