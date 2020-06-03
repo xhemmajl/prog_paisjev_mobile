@@ -11,7 +11,10 @@ import android.graphics.Paint;
 
 
 public class GameView extends View {
-        private Bitmap fish;
+        private Bitmap stickman[] = new Bitmap[2];
+        private int stickmanX = 10;
+        private int stickmanY;
+        private int stickmanSpeed;
         private Bitmap backgroundImage;
         private Paint scorePaint = new Paint();
 
@@ -20,7 +23,8 @@ public class GameView extends View {
         super(context);
             //qet foto peshkit i gjeta ngoogle i morra , ish edhe versioni 2 najs kur klikon psh me i hap kraht
         //dmth po e vizatojm peshkin e par per momentin
-        fish = BitmapFactory.decodeResource(getResources(),R.drawable.fish1);
+        stickman[0] = BitmapFactory.decodeResource(getResources(),R.drawable.stickmanwalk);
+        stickman[1] = BitmapFactory.decodeResource(getResources(),R.drawable.stickmanjump);
             //backgroundi i lojes
 
         backgroundImage = BitmapFactory.decodeResource(getResources(),R.drawable.background);
@@ -40,7 +44,6 @@ public class GameView extends View {
         super.onDraw(canvas);
         //pe vendosum npamje ku kan mu dok permes drawit
         canvas.drawBitmap(backgroundImage,0,0,null);
-        canvas.drawBitmap(fish,0,0,null);
         canvas.drawText("Score :",20,60,scorePaint);
     }
 }
