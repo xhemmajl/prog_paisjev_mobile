@@ -10,15 +10,16 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
-    private FlyingFishView gameView;
+    private GameView pamjaLojes;
     private Handler handler = new Handler();
     private final static long Interval = 30;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        gameView = new FlyingFishView(this);
-        setContentView(gameView);
+        pamjaLojes = new GameView(this);
+        setContentView(pamjaLojes);
 
         Timer timer =  new Timer();
         timer.schedule(new TimerTask() {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        gameView.invalidate();
+                        pamjaLojes.invalidate();
                     }
                 });
             }
