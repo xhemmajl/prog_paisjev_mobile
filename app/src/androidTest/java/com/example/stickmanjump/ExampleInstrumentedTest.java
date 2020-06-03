@@ -1,4 +1,4 @@
-package com.example.fishjump;
+package com.example.stickmanjump;
 
 import android.content.Context;
 
