@@ -23,13 +23,24 @@ public class GameView extends View {
         stickman[0] = BitmapFactory.decodeResource(getResources(),R.drawable.stickmanwalk);
         stickman[1] = BitmapFactory.decodeResource(getResources(),R.drawable.stickmanjump);
         //backgroundi i lojes
-
+        //qetu jan elementet e lojes
+        hamburger=BitmapFactory.decodeResource(getResources(),R.drawable.hamburgeri);
+        pica=BitmapFactory.decodeResource(getResources(),R.drawable.pica);
+        korona=BitmapFactory.decodeResource(getResources(),R.drawable.korona);
+        
         backgroundImage = BitmapFactory.decodeResource(getResources(),R.drawable.background);
         //score
         scorePaint.setColor(Color.WHITE);
         scorePaint.setTextSize(70);
         scorePaint.setTypeface(Typeface.DEFAULT_BOLD);
         scorePaint.setAntiAlias(true);
+        //qetu jan jetet nloj
+        life[0] = BitmapFactory.decodeResource(getResources(),R.drawable.hearts);
+        life[1] = BitmapFactory.decodeResource(getResources(),R.drawable.heart_grey);
+        stickmanY = 550;
+
+        score = 0;
+        lifeCounterOfstickman = 3;
     }
     @Override
     protected void onDraw(Canvas canvas) {
