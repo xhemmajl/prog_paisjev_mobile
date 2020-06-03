@@ -11,11 +11,30 @@ import android.view.View;
 
 public class GameView extends View {
     private Bitmap stickman[] = new Bitmap[2];
+    //STICKMAN X EDHE Y JAN POZITAT KU KAN MU VENDOS NE DISPLAY .
     private int stickmanX = 10;
     private int stickmanY;
     private int stickmanSpeed;
+    //Qeto me X ,Y jan per mi vendos gjat lojes ku me u shfaq elementet random
+    private int canvasWidth,canvasHeight;
+
+    private int hamburgerX,hamburgerY,hamburgerSpeed = 15;
+
+    private int picaX,picaY,picaSpeed = 20;
+
+    private int koronaX,koronaY,koronaSpeed = 21;
+
+
+
+    public int score,lifeCounterOfstickman;
+    private boolean touch = false;
+
     private Bitmap backgroundImage;
     private Paint scorePaint = new Paint();
+    private Bitmap life[] = new Bitmap[2];
+    private Bitmap hamburger;
+    private Bitmap pica;
+    private Bitmap korona;
     public GameView(Context context) {
         super(context);
         //qet foto stickmanit i gjeta ngoogle i morra , ish edhe versioni 2 najs kur klikon me kcy
