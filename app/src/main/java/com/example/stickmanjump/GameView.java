@@ -110,6 +110,12 @@ public class GameView extends View {
         }
 
         canvas.drawBitmap(hamburger,hamburgerX,hamburgerY,null);
+        picaX = picaX - picaSpeed;
+        if(hitElementsChecker(picaX,picaY))
+        {
+            score = score + 20;
+            picaX = -100;
+        }
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
