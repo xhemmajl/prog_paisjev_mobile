@@ -96,6 +96,20 @@ public class GameView extends View {
             canvas.drawBitmap(stickman[0],stickmanX,stickmanY,null);
 
         }
+        hamburgerX = hamburgerX - hamburgerSpeed;
+        if(hitElementsChecker(hamburgerX,hamburgerY))
+        {
+            score = score + 10;
+            hamburgerX = -100;
+        }
+        if(hamburgerX < 0 ){
+
+            hamburgerX = canvasWidth + 21;
+            hamburgerY =  (int) Math.floor(Math.random() * (maxstickmanY - minstickmanY)) + minstickmanY;
+
+        }
+
+        canvas.drawBitmap(hamburger,hamburgerX,hamburgerY,null);
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
