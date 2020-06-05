@@ -71,6 +71,18 @@ public class GameView extends View {
         int minstickmanY = stickman[0].getHeight();
         int maxstickmanY = canvasHeight - stickman[0].getHeight() * 3;
         stickmanY = stickmanY + stickmanSpeed;
+        if(stickmanY < minstickmanY) {
+
+            stickmanY = minstickmanY;
+
+
+        }
+        if(stickmanY > maxstickmanY) {
+
+            stickmanY = maxstickmanY;
+
+
+        }
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
