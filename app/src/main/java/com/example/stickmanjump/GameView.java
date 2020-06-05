@@ -116,6 +116,14 @@ public class GameView extends View {
             score = score + 20;
             picaX = -100;
         }
+        if(picaX < 0 ){
+
+            picaX = canvasWidth + 21;
+            picaY =  (int) Math.floor(Math.random() * ( maxstickmanY - minstickmanY)) + minstickmanY;
+
+        }
+
+        canvas.drawBitmap(pica,picaX,picaY,null);
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
