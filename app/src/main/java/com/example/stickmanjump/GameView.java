@@ -83,6 +83,19 @@ public class GameView extends View {
 
 
         }
+        stickmanSpeed = stickmanSpeed + 2;
+        if(touch) {
+            canvas.drawBitmap(stickman[1],stickmanX,stickmanY,null);
+            touch = false;
+
+
+
+        }
+        else {
+
+            canvas.drawBitmap(stickman[0],stickmanX,stickmanY,null);
+
+        }
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
