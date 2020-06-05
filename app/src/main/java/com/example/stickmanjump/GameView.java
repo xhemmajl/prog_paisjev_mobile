@@ -65,6 +65,8 @@ public class GameView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         //pe vendosum npamje ku kan mu dok permes drawit
+        canvasWidth = canvas.getWidth();
+        canvasHeight = canvas.getHeight();
         canvas.drawBitmap(backgroundImage,0,0,null);
         canvas.drawText("Score :",20,60,scorePaint);
     }
