@@ -68,6 +68,9 @@ public class GameView extends View {
         canvasWidth = canvas.getWidth();
         canvasHeight = canvas.getHeight();
         canvas.drawBitmap(backgroundImage,0,0,null);
+        int minstickmanY = stickman[0].getHeight();
+        int maxstickmanY = canvasHeight - stickman[0].getHeight() * 3;
+        stickmanY = stickmanY + stickmanSpeed;
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
