@@ -31,10 +31,12 @@ public class GameView extends View {
 
     private Bitmap backgroundImage;
     private Paint scorePaint = new Paint();
+    private Paint levelPaint = new Paint();
     private Bitmap life[] = new Bitmap[2];
     private Bitmap hamburger;
     private Bitmap pica;
     private Bitmap korona;
+    private Bitmap korona2;
     public GameView(Context context) {
         super(context);
         //qet foto stickmanit i gjeta ngoogle i morra , ish edhe versioni 2 najs kur klikon me kcy
@@ -46,6 +48,7 @@ public class GameView extends View {
         hamburger=BitmapFactory.decodeResource(getResources(),R.drawable.hamburgeri);
         pica=BitmapFactory.decodeResource(getResources(),R.drawable.pica);
         korona=BitmapFactory.decodeResource(getResources(),R.drawable.korona);
+        korona2=BitmapFactory.decodeResource(getResources(),R.drawable.korona);
         
         backgroundImage = BitmapFactory.decodeResource(getResources(),R.drawable.background);
         //score
@@ -53,6 +56,11 @@ public class GameView extends View {
         scorePaint.setTextSize(70);
         scorePaint.setTypeface(Typeface.DEFAULT_BOLD);
         scorePaint.setAntiAlias(true);
+
+        levelPaint.setColor(Color.WHITE);
+        levelPaint.setTextSize(70);
+        levelPaint.setTypeface(Typeface.DEFAULT_BOLD);
+        levelPaint.setAntiAlias(true);
         //qetu jan jetet nloj
         life[0] = BitmapFactory.decodeResource(getResources(),R.drawable.hearts);
         life[1] = BitmapFactory.decodeResource(getResources(),R.drawable.heart_grey);
