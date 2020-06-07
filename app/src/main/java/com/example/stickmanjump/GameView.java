@@ -183,6 +183,10 @@ public class GameView extends View {
             koronaSpeed=33;
             level = 4;
         }
+        if(score>500){
+            koronaSpeed=35;
+            level = 5;
+        }
 
         canvas.drawText("Score :",20,60,scorePaint);
     }
