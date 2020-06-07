@@ -150,6 +150,13 @@ public class GameView extends View {
                     Intent gameOverIntent = new Intent(getContext(), GameOverActivity.class);
                     gameOverIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     getContext().startActivity(gameOverIntent);
+        //me qet intentin po e bajm  te mundshme qasjen  e scores nga klasa GameOver, dmth kjo po na vyn me rujt highScore sa ki shkku -
+                    Intent ruj = new Intent(getContext(), GameOverActivity.class);
+                    ruj.putExtra("SCORE", score); //vendosja scoren
+                    getContext().startActivity(ruj);
+                }
+
+        }
 
         canvas.drawText("Score :",20,60,scorePaint);
     }
