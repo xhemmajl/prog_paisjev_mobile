@@ -226,5 +226,31 @@ public class GameView extends View {
         if(level>7){
             canvas.drawBitmap(korona2,korona2X,korona2Y,null);
         }
+        for(int i=0;i<3;i++){
+
+            int x = (int) (580+life[0].getWidth()*1.5*i);
+            int y = 30;
+
+            if(i<lifeCounterOfstickman){
+                canvas.drawBitmap(life[0],x,y,null);
+
+
+            }
+            else
+            {
+                canvas.drawBitmap(life[1],x,y,null);
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+    }
     }
     }
