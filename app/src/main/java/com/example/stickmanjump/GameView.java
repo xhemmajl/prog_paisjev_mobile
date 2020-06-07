@@ -144,6 +144,12 @@ public class GameView extends View {
             korona2X = -100;
             lifeCounterOfstickman--;
         }
+            if (lifeCounterOfstickman == 0) {
+                    Toast.makeText(getContext(), "Loja Mbaroi(Game Over)", Toast.LENGTH_SHORT).show();
+
+                    Intent gameOverIntent = new Intent(getContext(), GameOverActivity.class);
+                    gameOverIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    getContext().startActivity(gameOverIntent);
 
         canvas.drawText("Score :",20,60,scorePaint);
     }
