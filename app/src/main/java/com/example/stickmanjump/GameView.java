@@ -225,7 +225,7 @@ public class GameView extends View {
         }
         canvas.drawBitmap(korona,koronaX,koronaY,null);
         canvas.drawText("Level :"+level,20,170,levelPaint);
-        canvas.drawText("Score :",20,60,scorePaint);
+        canvas.drawText("Score :"+score,20,60,scorePaint);
         if(level>7){
             canvas.drawBitmap(korona2,korona2X,korona2Y,null);
         }
