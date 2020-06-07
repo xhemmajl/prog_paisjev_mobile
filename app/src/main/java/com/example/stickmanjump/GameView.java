@@ -163,6 +163,10 @@ public class GameView extends View {
             koronaY =  (int) Math.floor(Math.random() * (maxstickmanY - minstickmanY)) + minstickmanY;
 
         }
+        if(korona2X<0){
+            korona2X = canvasWidth + 21;
+            korona2Y = (int) Math.floor(Math.random() * (maxstickmanY - minstickmanY)) + minstickmanY;
+        }
 
         canvas.drawText("Score :",20,60,scorePaint);
     }
