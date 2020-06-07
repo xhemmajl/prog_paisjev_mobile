@@ -23,6 +23,8 @@ public class GameView extends View {
     private int picaX,picaY,picaSpeed = 20;
 
     private int koronaX,koronaY,koronaSpeed = 21;
+    private int korona2X,korona2Y,korona2Speed=30;
+
 
 
 
