@@ -134,6 +134,17 @@ public class GameView extends View {
         }
 
         canvas.drawBitmap(pica,picaX,picaY,null);
+        koronaX = koronaX - koronaSpeed;
+        korona2X = korona2X - korona2Speed;
+        if(hitElementsChecker(koronaX,koronaY))
+        {
+            koronaX = -100;
+            lifeCounterOfstickman--;
+        if(hitElementsChecker(korona2X,korona2Y)) {
+            korona2X = -100;
+            lifeCounterOfstickman--;
+        }
+
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
