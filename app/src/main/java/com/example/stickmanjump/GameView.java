@@ -262,5 +262,15 @@ public class GameView extends View {
         return false;
 
     }
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if(event.getAction() == MotionEvent.ACTION_DOWN)
+        {
+
+            touch = true;
+
+            stickmanSpeed = -22;
+        }
+        return true;
     }
     }
