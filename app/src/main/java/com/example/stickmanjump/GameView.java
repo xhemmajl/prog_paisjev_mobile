@@ -252,5 +252,15 @@ public class GameView extends View {
 
 
     }
+    public boolean hitElementsChecker(int x,int y){
+
+        if(stickmanX < x && x <(stickmanX + stickman[0].getWidth()) && stickmanY<y && y<(stickmanY+stickman[0].getHeight())){
+
+            return true;
+
+        }
+        return false;
+
+    }
     }
     }
