@@ -29,6 +29,7 @@ public class GameView extends View {
 
 
     public int score,lifeCounterOfstickman;
+    public int level;
     private boolean touch = false;
 
     private Bitmap backgroundImage;
