@@ -220,7 +220,8 @@ public class GameView extends View {
             koronaSpeed=60;
             level = 13;
         }
-
+        canvas.drawBitmap(korona,koronaX,koronaY,null);
+        canvas.drawText("Level :"+level,20,170,levelPaint);
         canvas.drawText("Score :",20,60,scorePaint);
     }
     }
