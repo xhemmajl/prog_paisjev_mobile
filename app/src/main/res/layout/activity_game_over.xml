@@ -23,6 +23,16 @@
         android:text="1"
         android:textColor="#014345"
         android:textSize="50sp" />
+    <TextView
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreLabel"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="180dp"
+        android:text="1"
+        android:textColor="#014345"
+        android:textSize="50sp"/>
     
     
     
