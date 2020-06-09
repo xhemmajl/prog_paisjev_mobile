@@ -33,6 +33,17 @@
         android:text="1"
         android:textColor="#014345"
         android:textSize="50sp"/>
+    <Button
+        android:id="@+id/play_again_btn"
+        android:layout_below="@+id/highScoreLabel"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="140dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Play Again"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="@color/colorAccent"/>
     
     
     
