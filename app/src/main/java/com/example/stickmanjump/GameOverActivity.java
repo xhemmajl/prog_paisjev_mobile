@@ -36,6 +36,15 @@ public class GameOverActivity extends AppCompatActivity {
         else {
             highScoreLabel.setText("High Score :"+highScore);
         }
+            StartGameAgain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent = new Intent(GameOverActivity.this,MainActivity.class);
+                startActivity(mainIntent);
+
+
+            }
+        });
 
     }
 }
