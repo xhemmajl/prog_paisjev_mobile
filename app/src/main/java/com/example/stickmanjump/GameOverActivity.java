@@ -3,6 +3,8 @@ package com.example.stickmanjump;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class GameOverActivity extends AppCompatActivity {
         private Button StartGameAgain;
