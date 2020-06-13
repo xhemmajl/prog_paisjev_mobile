@@ -1,5 +1,6 @@
 package com.example.stickmanjump;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -24,4 +25,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues contentValues =  new ContentValues();
         contentValues.put("email",email);
         contentValues.put("password",password);
+        
+        long ins = db.insert("user",null,contentValues);
+        if(ins == -1) return false;
+        else return true;
 }
