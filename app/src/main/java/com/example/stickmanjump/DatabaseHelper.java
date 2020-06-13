@@ -18,4 +18,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists user");
     }
+    //metoda me insertu user ndatabaz
+    public boolean insert(String email,String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues =  new ContentValues();
+        contentValues.put("email",email);
+        contentValues.put("password",password);
 }
