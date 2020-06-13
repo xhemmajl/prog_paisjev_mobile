@@ -2,6 +2,7 @@ package com.example.stickmanjump;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -30,3 +31,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(ins == -1) return false;
         else return true;
 }
+    //metoda me check a ekziston emaili
+
+    public boolean chkemail(String email) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * from user where email=?",new String[]{email});
+        if(cursor.getCount()>0) return false;
+        else return true;
+    }
