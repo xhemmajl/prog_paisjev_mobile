@@ -39,3 +39,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(cursor.getCount()>0) return false;
         else return true;
     }
+    //me ba check tash emailin edhe passwordin per mu logu
+        public Boolean emailpassword(String email,String password){
+        SQLiteDatabase db = this.getReadableDatabase()
