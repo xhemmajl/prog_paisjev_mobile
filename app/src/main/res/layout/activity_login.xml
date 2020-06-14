@@ -82,5 +82,8 @@
         android:layout_height="63dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="468dp"
-
+        android:background="@color/colorAccent"
+        android:text="@string/log_inn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
