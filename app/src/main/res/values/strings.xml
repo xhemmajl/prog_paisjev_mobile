@@ -4,4 +4,6 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="log_inn">LOGIN</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="sign_upp">SIGN UP</string>
 </resources>
