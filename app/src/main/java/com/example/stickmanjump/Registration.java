@@ -22,5 +22,11 @@ public class Registration extends AppCompatActivity {
         Password = (EditText) findViewById(R.id.password);
         confirm_password = (EditText) findViewById(R.id.confirmpassword);
         SignUp = (Button) findViewById(R.id.signupbtn);
+        SignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = Email.getText().toString();
+                String password = Password.getText().toString();
+                String confirmPassword = confirm_password.getText().toString();
     }
 }
