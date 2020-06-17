@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class LoginActivity extends AppCompatActivity {
     EditText Email;
     EditText Password;
