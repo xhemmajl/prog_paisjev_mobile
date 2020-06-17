@@ -49,5 +49,20 @@ public class Registration extends AppCompatActivity {
                             //perndryshe nese emaili ekziston, error!
 
                         }
+                        else{
+                            Toast.makeText(getApplicationContext(),"This email address exist!!",Toast.LENGTH_SHORT).show();
+
+
+
+                        }
+                        //nese nuk perputhen passwordat!
+                    }else
+                    Toast.makeText(getApplicationContext(),"Password do not match!",Toast.LENGTH_SHORT).show();
+
+                }
+
+
+            }
+        });
     }
 }
