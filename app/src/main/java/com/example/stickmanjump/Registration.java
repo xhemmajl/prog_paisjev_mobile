@@ -33,5 +33,12 @@ public class Registration extends AppCompatActivity {
                 if(email.equals("") || password.equals("") || confirmPassword.equals("")){
                     Toast.makeText(getApplicationContext(),"Fields are empty?",Toast.LENGTH_SHORT).show();
                 }
+                //ateher nese dy paswordat perputhen ateher kqyre qajo email a ekziston ndatabaz, nese ekziston fute ndatabaz nese jo error
+                else{
+                    //nese passwordat perputhen
+                    if(password.equals(confirmPassword)) {
+                        //cheke a ekziston qaj email
+                        Boolean chkemail = db.chkemail(email);
+                        //nese qaj email nuk ekzsiton
     }
 }
