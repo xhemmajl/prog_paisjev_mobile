@@ -28,5 +28,10 @@ public class Registration extends AppCompatActivity {
                 String email = Email.getText().toString();
                 String password = Password.getText().toString();
                 String confirmPassword = confirm_password.getText().toString();
+                
+                //nese i le te zbrasta ateher let del posht aty widget qe  i ke lan zbrast
+                if(email.equals("") || password.equals("") || confirmPassword.equals("")){
+                    Toast.makeText(getApplicationContext(),"Fields are empty?",Toast.LENGTH_SHORT).show();
+                }
     }
 }
