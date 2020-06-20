@@ -1,4 +1,4 @@
-package com.example.flyingfishgame;
+package com.example.stickmanjump;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
