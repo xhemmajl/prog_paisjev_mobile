@@ -12,3 +12,21 @@ public class PagerAdapter extends FragmentPagerAdapter {
         super(fm, behavior);
         this.tabsNumber = tabs;
     }
+    @NonNull
+    @Override
+    public Fragment getItem(int position) {
+        switch (position){
+            case 0:
+                return new First();
+            case 1:
+                return new Second();
+            case 2 :
+                return new Third();
+            default: return null;
+        }
+    }
+     @Override
+    public int getCount() {
+        return tabsNumber;
+    }
+}
