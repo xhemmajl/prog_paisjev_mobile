@@ -16,3 +16,11 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+public class MainActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener{
+    DrawerLayout drawerLayout;
+    ActionBarDrawerToggle toggle;
+    NavigationView navigationView;
+    ViewPager pager;
+    TabLayout mTabLayout;
+    TabItem firstItem,secondItem,thirdItem;
+    PagerAdapter adapter;
