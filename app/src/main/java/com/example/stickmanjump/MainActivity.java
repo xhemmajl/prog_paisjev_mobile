@@ -40,3 +40,11 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        
+        toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.setDrawerIndicatorEnabled(true);
+        toggle.syncState();
+
+        adapter = new PagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT,mTabLayout.getTabCount());
+        pager.setAdapter(adapter);
