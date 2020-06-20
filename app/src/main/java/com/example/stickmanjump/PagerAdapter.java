@@ -7,3 +7,8 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class PagerAdapter extends FragmentPagerAdapter {
     private int tabsNumber;
+    
+    public PagerAdapter(@NonNull FragmentManager fm, int behavior,int tabs) {
+        super(fm, behavior);
+        this.tabsNumber = tabs;
+    }
