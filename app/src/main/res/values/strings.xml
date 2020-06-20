@@ -6,4 +6,7 @@
     <string name="log_inn">LOGIN</string>
     <string name="retype_password">Retype Password</string>
     <string name="sign_upp">SIGN UP</string>
+    <string name="loginToolbar">Login</string>
+    <string name="registerToolbar">Register</string>
+    <string name="Aboutcontact">About</string>
 </resources>
