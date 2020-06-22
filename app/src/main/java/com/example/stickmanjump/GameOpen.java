@@ -27,7 +27,7 @@ public class GameOpen extends AppCompatActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        gameView.invalidate();
+                        gameOpen.invalidate();
                     }
                 });
             }
