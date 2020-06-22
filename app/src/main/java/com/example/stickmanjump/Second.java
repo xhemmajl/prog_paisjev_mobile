@@ -37,6 +37,14 @@ public class Second extends Fragment {
                 String email = Email.getText().toString();
                 String password = Password.getText().toString();
                 String confirmPassword = confirm_password.getText().toString();
+                //nese i le te zbrasta ateher let del posht aty widget qe  i ke lan zbrast
+                if(email.equals("") || password.equals("") || confirmPassword.equals("")){
+                    Toast.makeText(getContext(),"Fields are empty?",Toast.LENGTH_SHORT).show();
+                }
+                //ateher nese dy paswordat perputhen ateher kqyre qajo email a ekziston ndatabaz, nese ekziston fute ndatabaz nese jo errori sa kryt
+                else{
+                    //nese passwordat perputhen
+                    if(password.equals(confirmPassword)) {
 
         return view2;
     }
