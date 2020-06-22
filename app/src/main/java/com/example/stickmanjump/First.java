@@ -48,6 +48,10 @@ public class First extends Fragment {
                 //ni bolean per me check emailin edhe passwordin nga databaza
                 Boolean Chkemailpass = db.emailpassword(email,password);
                 //nese qeky boolean del true dmth  ekziston ateher hin ne loj meniher permes intentit
+                if(Chkemailpass==true){
+                    Intent logInt = new Intent(getActivity(),SplashActivity.class);
+                    startActivity(logInt);
+                }
 
         return view;
     }
