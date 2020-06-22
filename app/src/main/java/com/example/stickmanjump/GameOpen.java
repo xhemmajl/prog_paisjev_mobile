@@ -17,6 +17,21 @@ public class GameOpen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_open);
+        gameOpen = new GameView(this);
+        setContentView(gameOpen);
+
+        Timer timer =  new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        gameView.invalidate();
+                    }
+                });
+            }
+        },0,Interval);
+        
     }
 }
