@@ -9,6 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class Second extends Fragment {
+    EditText Password;
+    EditText confirm_password;
+    EditText Email;
+    Button SignUp;
+    DatabaseHelper db;
 
 
     public Second() {
