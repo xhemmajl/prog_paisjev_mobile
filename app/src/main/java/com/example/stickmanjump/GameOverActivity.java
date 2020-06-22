@@ -41,8 +41,8 @@ public class GameOverActivity extends AppCompatActivity {
             StartGameAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainIntent = new Intent(GameOverActivity.this,MainActivity.class);
-                startActivity(mainIntent);
+                Intent playAgain = new Intent(GameOverActivity.this,GameOpen.class);
+                startActivity(playAgain);
 
 
             }
