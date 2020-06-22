@@ -45,6 +45,16 @@ public class Second extends Fragment {
                 else{
                     //nese passwordat perputhen
                     if(password.equals(confirmPassword)) {
+                        //cheke a ekziston qaj email
+                        Boolean chkemail = db.chkemail(email);
+                        //nese qaj email nuk ekzsiton
+                        if(chkemail==true){
+                            //ateher provoje insertin ndatabaz
+                            Boolean insert =  db.insert(email,password);
+                            //nese inserti del true ateher je regjistru
+                            if(insert==true) {
+                                Toast.makeText(getContext(),"Registered Successfully.Back to Login",Toast.LENGTH_SHORT).show();}
+                            //perndryshe nese emaili ekziston, error!
 
         return view2;
     }
