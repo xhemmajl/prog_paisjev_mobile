@@ -55,6 +55,22 @@ public class Second extends Fragment {
                             if(insert==true) {
                                 Toast.makeText(getContext(),"Registered Successfully.Back to Login",Toast.LENGTH_SHORT).show();}
                             //perndryshe nese emaili ekziston, error!
+                            }
+                        else{
+                            Toast.makeText(getContext(),"This email address exist!!",Toast.LENGTH_SHORT).show();
+
+
+
+                        }
+                        //nese nuk perputhen pasat
+                    }else
+                        Toast.makeText(getContext(),"Password do not match!",Toast.LENGTH_SHORT).show();
+
+                }
+
+
+            }
+        });
 
         return view2;
     }
