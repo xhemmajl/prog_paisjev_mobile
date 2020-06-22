@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
         Play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent play = new Intent(SplashActivity.this, MainActivity.class);
+                Intent play = new Intent(SplashActivity.this, GameOpen.class);
                 startActivity(play);
             }
         });
