@@ -10,6 +10,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class GameOpen extends AppCompatActivity {
+    private GameView gameOpen;
+    private Handler handler = new Handler();
+    private final static long Interval = 30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
