@@ -1,44 +1,14 @@
 package com.example.stickmanjump;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class GameOpen extends AppCompatActivity {
-    private GameView gameView;
-    private Handler handler = new Handler();
-    private final static long Interval = 30;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        gameView = new GameView(this);
-        setContentView(gameView);
-
-        Timer timer =  new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        gameView.invalidate();
-                    }
-                });
-            }
-        },0,Interval);
-
-
-
+        setContentView(R.layout.activity_game_open);
     }
-
-
-
 }
-
