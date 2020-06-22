@@ -52,6 +52,20 @@ public class First extends Fragment {
                     Intent logInt = new Intent(getActivity(),SplashActivity.class);
                     startActivity(logInt);
                 }
+                //perndryshe qite ni mesazh qe nuk jan mire
+                else{
+                    Snackbar.make(constrainLayout2,"Wrong Email or Password",Snackbar.LENGTH_LONG)
+                            .setAction("Close", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+
+                                }
+                            })
+                            .setActionTextColor(getResources().getColor(R.color.colorAccent)).show();
+                }
+
+            }
+        });
 
         return view;
     }
