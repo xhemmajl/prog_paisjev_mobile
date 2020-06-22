@@ -38,6 +38,16 @@ public class First extends Fragment {
         Login = (Button) view.findViewById(R.id.loginbtn);
         db = new DatabaseHelper(getContext());
         constrainLayout2 = view.findViewById(R.id.constrainLayout2);
+        
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = Email.getText().toString();
+                String password = Password.getText().toString();
+
+                //ni bolean per me check emailin edhe passwordin nga databaza
+                Boolean Chkemailpass = db.emailpassword(email,password);
+                //nese qeky boolean del true dmth  ekziston ateher hin ne loj meniher permes intentit
 
         return view;
     }
