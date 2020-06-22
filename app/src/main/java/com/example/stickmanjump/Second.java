@@ -31,6 +31,12 @@ public class Second extends Fragment {
         Password =  view2.findViewById(R.id.password);
         confirm_password =  view2.findViewById(R.id.confirmpassword);
         SignUp =  view2.findViewById(R.id.signupbtn);
+        SignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = Email.getText().toString();
+                String password = Password.getText().toString();
+                String confirmPassword = confirm_password.getText().toString();
 
         return view2;
     }
