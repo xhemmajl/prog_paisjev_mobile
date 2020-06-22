@@ -26,6 +26,11 @@ public class Second extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view2 =  inflater.inflate(R.layout.fragment_second, container, false);
+        db = new DatabaseHelper(getContext());
+        Email =  view2.findViewById(R.id.email);
+        Password =  view2.findViewById(R.id.password);
+        confirm_password =  view2.findViewById(R.id.confirmpassword);
+        SignUp =  view2.findViewById(R.id.signupbtn);
 
         return view2;
     }
