@@ -55,3 +55,11 @@
         android:textColor="#ECDADA"
         android:textSize="30sp"
         android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/hamburgeriii"
+        android:layout_width="85dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/takeText"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/hamburgerii" />
