@@ -51,3 +51,7 @@
         android:layout_marginStart="149dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/bad_script"
+        android:text="@string/take"
+        android:textColor="#ECDADA"
+        android:textSize="30sp"
+        android:textStyle="bold" />
