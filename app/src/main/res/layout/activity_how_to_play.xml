@@ -82,3 +82,7 @@
         android:textStyle="bold"
         android:fontFamily="@font/bad_script"
         android:layout_marginStart="130dp"/>
+    <ImageView
+        android:id="@+id/korona"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
