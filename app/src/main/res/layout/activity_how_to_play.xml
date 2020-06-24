@@ -43,3 +43,11 @@
         android:text="@string/you_will_see_things_coming"
         android:textColor="#73DC95"
         android:textSize="30sp" />
+    <TextView
+        android:id="@+id/takeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thingsComing"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bad_script"
