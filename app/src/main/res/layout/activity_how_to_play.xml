@@ -63,3 +63,10 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="14dp"
         app:srcCompat="@drawable/hamburgerii" />
+    <ImageView
+        android:id="@+id/pizaa"
+        android:layout_width="63dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/takeText"
+        android:layout_marginStart="240dp"
+        app:srcCompat="@drawable/piza" />
