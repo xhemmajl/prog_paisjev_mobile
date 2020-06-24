@@ -70,3 +70,8 @@
         android:layout_below="@+id/takeText"
         android:layout_marginStart="240dp"
         app:srcCompat="@drawable/piza" />
+    <TextView
+        android:id="@+id/dontTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_take"
