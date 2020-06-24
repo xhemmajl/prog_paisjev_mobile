@@ -86,3 +86,6 @@
         android:id="@+id/korona"
         android:layout_width="86dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/dontTake"
+        android:layout_marginStart="139dp"
+        app:srcCompat="@drawable/koronavirus" />
