@@ -26,3 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/touchpng"
         android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/press_the_screen_to_jump"
+        android:textStyle="bold"
+        android:fontFamily="@font/aldrich"
+        android:textColor="#9C2D2D"
+        android:textSize="30sp" />
