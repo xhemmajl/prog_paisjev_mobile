@@ -13,3 +13,10 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/howtoplay"
         android:layout_marginStart="65dp"/>
+    <ImageView
+        android:id="@+id/touchpng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/touchscreen"
+        android:layout_below="@+id/howtoplaypng"
+        android:layout_marginStart="150dp"/>
