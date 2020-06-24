@@ -20,3 +20,9 @@
         app:srcCompat="@drawable/touchscreen"
         android:layout_below="@+id/howtoplaypng"
         android:layout_marginStart="150dp"/>
+    <TextView
+        android:id="@+id/pressScreenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touchpng"
+        android:layout_marginStart="0dp"
