@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -73,8 +74,13 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
      @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         drawerLayout.closeDrawer(GravityCompat.START);
-        if(item.getItemId() == R.id.menuTab){
-            Toast.makeText(this, "Btn is clicked.", Toast.LENGTH_SHORT).show();
+        if(item.getItemId() == R.id.homeTab){
+            Intent openHome = new Intent(MainActivity.this,MainActivity.class);
+            startActivity(openHome);
+        }
+        if(item.getItemId() == R.id.howtoplayTab){
+            Intent openHowToPlay = new Intent(MainActivity.this,HowToPlay.class);
+            startActivity(openHowToPlay);
         }
         return false;
     }
