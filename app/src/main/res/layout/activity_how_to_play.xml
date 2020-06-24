@@ -38,3 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/pressScreenText"
         android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:text="@string/you_will_see_things_coming"
+        android:textColor="#73DC95"
+        android:textSize="30sp" />
