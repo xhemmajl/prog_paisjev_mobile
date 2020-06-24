@@ -9,7 +9,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HeaderView"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/stickman_jump"
         android:textColor="#FFFFFF"
-        android:textSize="30sp" />
+        android:textSize="45sp" />
 </LinearLayout>

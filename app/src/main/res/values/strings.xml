@@ -15,4 +15,10 @@
     <string name="close">close</string>
     <string name="home">Home</string>
     <string name="how_to_play">How to Play</string>
+    <string name="press_the_screen_to_jump">Press the screen to jump</string>
+    <string name="you_will_see_things_coming">You will see things coming</string>
+    <string name="take">Take</string>
+    <string name="don_t_take">Don\'t take !</string>
+    <string name="back">Back</string>
+    <string name="stickman_jump">Stickman Jump</string>
 </resources>

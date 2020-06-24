@@ -4,22 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".howtoplay"
+    tools:context=".HowToPlay"
     android:background="@color/cardview_dark_background"
     >
+
     <ImageView
         android:id="@+id/howtoplaypng"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/howtoplay"
-        android:layout_marginStart="65dp"/>
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        app:srcCompat="@drawable/howtoplay" />
+
     <ImageView
         android:id="@+id/touchpng"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/touchscreen"
+        android:layout_width="101dp"
+        android:layout_height="64dp"
         android:layout_below="@+id/howtoplaypng"
-        android:layout_marginStart="150dp"/>
+        android:layout_marginStart="150dp"
+        app:srcCompat="@drawable/touchscreen" />
+
     <TextView
         android:id="@+id/pressScreenText"
         android:layout_width="wrap_content"
@@ -27,11 +30,11 @@
         android:layout_below="@+id/touchpng"
         android:layout_marginStart="0dp"
         android:layout_marginTop="10dp"
-        android:text="@string/press_the_screen_to_jump"
-        android:textStyle="bold"
         android:fontFamily="@font/aldrich"
+        android:text="@string/press_the_screen_to_jump"
         android:textColor="#9C2D2D"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/thingsComing"
         android:layout_width="wrap_content"
@@ -43,6 +46,7 @@
         android:text="@string/you_will_see_things_coming"
         android:textColor="#73DC95"
         android:textSize="30sp" />
+
     <TextView
         android:id="@+id/takeText"
         android:layout_width="wrap_content"
@@ -55,18 +59,20 @@
         android:textColor="#ECDADA"
         android:textSize="30sp"
         android:textStyle="bold" />
+
     <ImageView
         android:id="@+id/hamburgeriii"
-        android:layout_width="85dp"
-        android:layout_height="58dp"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
         android:layout_below="@+id/takeText"
         android:layout_marginStart="60dp"
         android:layout_marginTop="14dp"
         app:srcCompat="@drawable/hamburgerii" />
+
     <ImageView
         android:id="@+id/pizaa"
-        android:layout_width="63dp"
-        android:layout_height="69dp"
+        android:layout_width="59dp"
+        android:layout_height="63dp"
         android:layout_below="@+id/takeText"
         android:layout_marginStart="240dp"
         app:srcCompat="@drawable/piza" />

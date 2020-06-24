@@ -2,7 +2,10 @@ package com.example.stickmanjump;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class HowToPlay extends AppCompatActivity {
     Button back;
@@ -17,7 +20,7 @@ public class HowToPlay extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent back = new Intent(howtoplay.this,MainActivity.class);
+                Intent back = new Intent(HowToPlay.this,MainActivity.class);
                 startActivity(back);
             }
         });
