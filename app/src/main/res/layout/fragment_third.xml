@@ -7,15 +7,15 @@
     android:orientation="horizontal"
     android:background="@drawable/gradient"
     tools:context=".Third">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about"
+        android:layout_marginStart="100dp"
         android:fontFamily="@font/diplomata"
+        android:text="@string/about"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:layout_marginLeft="100dp"
-        />
+        android:textSize="30sp" />
     <ImageView
         android:id="@+id/open_fb"
         android:layout_width="111dp"
