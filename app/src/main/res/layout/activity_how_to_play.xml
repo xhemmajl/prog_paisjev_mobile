@@ -75,3 +75,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/don_t_take"
+        android:layout_below="@id/pizaa"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textColor="#ECDADA"
+        android:textStyle="bold"
+        android:fontFamily="@font/bad_script"
+        android:layout_marginStart="130dp"/>
