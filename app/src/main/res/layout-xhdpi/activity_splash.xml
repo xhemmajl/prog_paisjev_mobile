@@ -15,11 +15,11 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp"
         app:layout_constraintGuide_percent="0.0"/>
-    
+
     <ImageView
         android:id="@+id/stickmanFONT"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="619dp"
+        android:layout_height="138dp"
         android:src="@drawable/stickmanfont"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,11 +32,12 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp"
         app:layout_constraintGuide_percent="0.25" />
-    
+
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="288dp"
-        android:layout_height="544dp"
+        android:layout_width="412dp"
+        android:layout_height="697dp"
 
         android:layout_marginTop="-200dp"
         android:src="@drawable/stickmani"
@@ -54,12 +55,13 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp"
         app:layout_constraintGuide_percent="0.5" />
+
     <Button
         android:id="@+id/playButton"
-        android:layout_width="230dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="592dp"
+        android:layout_width="288dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="776dp"
         android:background="@drawable/dizajni_buttonit"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
@@ -67,13 +69,14 @@
         android:shadowRadius="5"
         android:text="@string/play"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
+        android:textSize="20sp"
 
 
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-<androidx.constraintlayout.widget.Guideline
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
