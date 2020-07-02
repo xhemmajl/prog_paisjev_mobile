@@ -35,7 +35,7 @@ public class Third extends Fragment {
         view3.findViewById(R.id.open_insta).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clicked("https://instagram.com/ourpage");
+                clicked("https://www.instagram.com/stickmanjumpp/");
             }
         });
 
