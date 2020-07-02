@@ -21,12 +21,13 @@ public class GameOverActivity extends AppCompatActivity {
         TextView scoreLabel =  (TextView) findViewById(R.id.scoreLabel);
         TextView highScoreLabel = (TextView) findViewById(R.id.highScoreLabel);
          StartGameAgain = (Button) findViewById(R.id.play_again_btn);
-        //prej qeti line dej 41 ka tbaj me ta qit highscoren ... :)
+        //Ktu e kemi mundsu qe permes intentit , variabla score ne kete klas , me marr vleren e variables score ne klasen GameView, dhe pastaj me vendos ne ekran dhe me krahasu me highscoren.
         int score = getIntent().getIntExtra("SCORE",0);
         scoreLabel.setText("Score :"+score);
+            //SharedPreferences eshte nje lloj databaze , nket rast ne po e ruajm highscoren nsharedPreferences
         SharedPreferences settings = getSharedPreferences("GAME_DATA", Context.MODE_PRIVATE);
         int highScore = settings.getInt("HIGH_SCORE",0);
-
+        
         if(score>highScore){
             highScoreLabel.setText("High Score :"+score);
 
