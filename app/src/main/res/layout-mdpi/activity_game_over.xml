@@ -7,6 +7,8 @@
     android:background="@drawable/backgroundgamover"
     tools:context=".GameOverActivity"
     >
+
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="390dp"
@@ -14,6 +16,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="21dp"
         app:srcCompat="@drawable/gamover" />
+
     <TextView
         android:id="@+id/scoreLabel"
         android:layout_width="wrap_content"
@@ -24,6 +27,7 @@
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"/>
+
     <TextView
         android:id="@+id/highScoreLabel"
         android:layout_width="wrap_content"
@@ -32,9 +36,10 @@
         android:layout_marginTop="100dp"
         android:layout_marginLeft="130dp"
         android:text="1"
+        android:textStyle="bold"
         android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textSize="30sp"/>
+
     <Button
         android:id="@+id/play_again_btn"
         android:layout_below="@+id/highScoreLabel"
@@ -46,11 +51,6 @@
         android:textStyle="bold"
         android:textSize="30sp"
         android:background="@color/colorAccent"/>
-    
-    
-    
+
+
 </RelativeLayout>
-    
-    
-    
-    
