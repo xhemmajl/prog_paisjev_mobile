@@ -7,36 +7,42 @@
     android:orientation="horizontal"
     android:background="@drawable/gradient"
     tools:context=".Third">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:fontFamily="@font/diplomata"
         android:text="@string/about"
+        android:fontFamily="@font/diplomata"
         android:textColor="#FFFFFF"
-        android:textSize="30sp" />
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"
+        />
+
+
+
+
     <ImageView
         android:id="@+id/open_fb"
-        android:layout_width="111dp"
+        android:layout_width="70dp"
         android:layout_height="104dp"
         android:src="@drawable/facebook_ikona"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="300dp"
         android:layout_marginStart="10dp"/>
+
     <ImageView
         android:id="@+id/open_insta"
-        android:layout_width="111dp"
+        android:layout_width="70dp"
         android:layout_height="104dp"
         android:src="@drawable/instagram_ikona"
-        android:layout_marginTop="450dp"
-        android:layout_marginStart="145dp"/>
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="120dp"/>
+
     <ImageView
         android:id="@+id/open_yt"
-        android:layout_width="111dp"
+        android:layout_width="70dp"
         android:layout_height="104dp"
         android:src="@drawable/youtube_ikona"
-        android:layout_marginTop="450dp"
-        android:layout_marginStart="280dp"/>
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="230dp"/>
 
 
     </RelativeLayout>
