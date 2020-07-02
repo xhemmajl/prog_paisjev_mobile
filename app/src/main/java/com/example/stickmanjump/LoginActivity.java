@@ -32,4 +32,9 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = Email.getText().toString();
                 String password = Password.getText().toString();
+                Boolean Chkemailpass = db.emailpassword(email, password);
+                if (Chkemailpass == true) {
+                    Intent logInt = new Intent(LoginActivity.this, SplashActivity.class);
+                    startActivity(logInt);
+                }
 
