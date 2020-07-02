@@ -1,58 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/gradient"
+    tools:context=".Third">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#0f0e0d"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tablayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#0f0e0d"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:tabIndicatorColor="#FFFFFF">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/firstItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/loginToolbar" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/secondItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/registerToolbar" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/thirditem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Aboutcontact" />
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="598dp"
-        android:layout_height="845dp"
-        android:layout_marginTop="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tablayout" />
+    <TextView
+        android:layout_width="398dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:fontFamily="@font/diplomata"
+        android:text="@string/about"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/open_fb"
+        android:layout_width="178dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/facebook_ikona" />
+
+    <ImageView
+        android:id="@+id/open_insta"
+        android:layout_width="135dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/instagram_ikona" />
+
+    <ImageView
+        android:id="@+id/open_yt"
+        android:layout_width="wrap_content"
+        android:layout_height="148dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/youtube_ikona" />
+
+
+</RelativeLayout>
