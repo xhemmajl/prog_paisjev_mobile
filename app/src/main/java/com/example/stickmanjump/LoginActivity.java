@@ -26,3 +26,10 @@ public class LoginActivity extends AppCompatActivity {
         Password = (EditText) findViewById(R.id.password);
         Login = (Button) findViewById(R.id.loginbtn);
         db = new DatabaseHelper(this);
+        constrainLayout2 = findViewById(R.id.constrainLayout2);
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = Email.getText().toString();
+                String password = Password.getText().toString();
+
