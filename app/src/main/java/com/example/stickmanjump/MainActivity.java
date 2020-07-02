@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
             startActivity(openHowToPlay);
         }
          if(item.getItemId() == R.id.callus){
-             Intent openCallOurTeam = new Intent(MainActivity.this,call_us.class);
+             Intent openCallOurTeam = new Intent(MainActivity.this,call.class);
              startActivity(openCallOurTeam);
          }
 
