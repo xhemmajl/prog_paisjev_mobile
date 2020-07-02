@@ -25,11 +25,11 @@
         <activity android:name=".HowToPlay" />
         <activity android:name=".GameOpen" />
         <activity android:name=".Registration" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity" />
         <activity android:name=".GameOverActivity" />
         <activity android:name=".LoginActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
