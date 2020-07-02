@@ -37,4 +37,19 @@ public class LoginActivity extends AppCompatActivity {
                     Intent logInt = new Intent(LoginActivity.this, SplashActivity.class);
                     startActivity(logInt);
                 }
+                else {
+                    Snackbar.make(constrainLayout2, "Wrong Email or Password", Snackbar.LENGTH_LONG)
+                            .setAction("Close", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+
+                                }
+                            })
+                            .setActionTextColor(getResources().getColor(R.color.colorAccent)).show();
+                }
+
+            }
+        });
+    }
+}
 
