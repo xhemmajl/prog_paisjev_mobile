@@ -42,7 +42,7 @@ public class Third extends Fragment {
         view3.findViewById(R.id.open_yt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clicked("https://youtube.com/ourpage");
+                clicked("https://www.youtube.com/channel/UCmqXjlmkOWNyu7L8GX0PbLg?view_as=subscriber");
             }
         });
 
