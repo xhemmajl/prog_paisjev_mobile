@@ -28,6 +28,11 @@ public class GameView extends View {
     private int koronaX,koronaY,koronaSpeed = 21;
     private int korona2X,korona2Y,korona2Speed=30;
 
+    //stepi asht per sa mu rrit speedi edhe level
+    public int step = 100;
+    //momenti kur kan mu ndrru leveli edhe speedi
+    public int target=100;
+
 
 
 
@@ -114,6 +119,7 @@ public class GameView extends View {
         if(hitElementsChecker(hamburgerX,hamburgerY))
         {
             score = score + 10;
+            CheckLevelSpeedChange(score);
             hamburgerX = -100;
         }
         if(hamburgerX < 0 ){
@@ -127,7 +133,8 @@ public class GameView extends View {
         picaX = picaX - picaSpeed;
         if(hitElementsChecker(picaX,picaY))
         {
-            score = score + 20;
+            score = score + 10;
+            CheckLevelSpeedChange(score);
             picaX = -100;
         }
         if(picaX < 0 ){
@@ -171,58 +178,7 @@ public class GameView extends View {
             korona2X = canvasWidth + 21;
             korona2Y = (int) Math.floor(Math.random() * (maxstickmanY - minstickmanY)) + minstickmanY;
         }
-        if (score>100){
-            koronaSpeed=25;
-            level = 1;
-        }
-        if(score>200){
-            koronaSpeed =27;
-            level = 2;
-        }
-        if(score>300){
-            koronaSpeed=30;
-            level = 3;
-        }
-        if(score>400){
-            koronaSpeed=33;
-            level = 4;
-        }
-        if(score>500){
-            koronaSpeed=35;
-            level = 5;
-        }
-        if(score>600){
-            koronaSpeed=38;
-            level = 6;
-        }
-        if(score>700){
-            koronaSpeed=42;
-            level = 7;
-        }
-        if(score>800){
-            koronaSpeed=44;
-            level = 8;
-        }
-        if(score>900){
-            koronaSpeed=47;
-            level = 9;
-        }
-        if(score>1000){
-            koronaSpeed=50;
-            level = 10;
-        }
-        if(score>1100){
-            koronaSpeed=53;
-            level=11;
-        }
-        if(score>1500){
-            koronaSpeed=54;
-            level = 12;
-        }
-        if(score>2000){
-            koronaSpeed=60;
-            level = 13;
-        }
+
         canvas.drawBitmap(korona,koronaX,koronaY,null);
         canvas.drawText("Level :"+level,20,170,levelPaint);
         canvas.drawText("Score :"+score,20,60,scorePaint);
@@ -265,6 +221,12 @@ public class GameView extends View {
         return false;
 
     }
+    public void CheckLevelSpeedChange(int score){
+        if(score == target){
+            target +=step;
+            level++;
+            koronaSpeed+=4;
+        }}
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         if(event.getAction() == MotionEvent.ACTION_DOWN)
