@@ -86,6 +86,10 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
              Intent openCallOurTeam = new Intent(MainActivity.this,call.class);
              startActivity(openCallOurTeam);
          }
+         if(item.getItemId() == R.id.uploadHighScore){
+             Intent openUploadHighScore = new Intent(MainActivity.this,UploadHighScore.class);
+             startActivity(openUploadHighScore);
+         }
 
         return false;
     }

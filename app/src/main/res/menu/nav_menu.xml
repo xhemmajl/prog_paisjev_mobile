@@ -7,4 +7,6 @@
         android:id="@+id/howtoplayTab"/>
     <item android:title="Call our team !"
         android:id="@+id/callus"/>
+    <item android:title="Upload High Score"
+        android:id="@+id/uploadHighScore"/>
 </menu>
