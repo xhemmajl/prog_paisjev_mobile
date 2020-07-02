@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:orientation="vertical"
-    tools:context=".call">
+    tools:context=".call"
+    android:background="@drawable/gradient">
 
     <ImageButton
         android:id="@+id/btncall"
@@ -17,7 +18,7 @@
         android:background="@drawable/btncall_back"
         android:onClick="callEvent"
         android:src="@drawable/ic_call"
-        android:background="@drawable/gradient"/>
+        />
 
 
 </LinearLayout>
