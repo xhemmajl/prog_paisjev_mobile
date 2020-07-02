@@ -28,7 +28,7 @@ public class Third extends Fragment {
         view3.findViewById(R.id.open_fb).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clicked("https://facebook.com/ourpage");
+                clicked("https://www.facebook.com/Stickman-Jump-106282594483777");
             }
         });
 
