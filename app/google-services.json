@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "804472049484",
+    "firebase_url": "https://stickman-jump-aa3f1.firebaseio.com",
+    "project_id": "stickman-jump-aa3f1",
+    "storage_bucket": "stickman-jump-aa3f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804472049484:android:3321591046eb7bb5fd49e9",
+        "android_client_info": {
+          "package_name": "com.example.stickmanjump"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804472049484-rek313lip01td5g4vomkrhva20mtg7hc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stickmanjump",
+            "certificate_hash": "00892e37cd7a163acf72acfb3878d7dd97e91625"
+          }
+        },
+        {
+          "client_id": "804472049484-ach15jmu09r67gv8ob4nttrmmh22qhj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI3-2sIgqmKLrz_Svy-TMwytdHC3Q_3ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804472049484-ach15jmu09r67gv8ob4nttrmmh22qhj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
